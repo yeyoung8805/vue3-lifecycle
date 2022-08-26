@@ -1,8 +1,6 @@
 <template>
   <ul>
-    <li v-for="(fruit, index) in fruits" :key="fruit">
-      {{ fruit }}-{{ index }}
-    </li>
+    <li v-for="(f, i) in fruits" :key="f">{{ f }}-{{ i }}</li>
   </ul>
 </template>
 
