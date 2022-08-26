@@ -1,17 +1,13 @@
 <template>
   <button @click="handler">Click me!</button>
-  <template v-if="isShow">
-    <h1>Title</h1>
-    <p>Paragraph 1</p>
-    <p>Paragraph 2</p>
-  </template>
+  <h1 v-if="isShow">Hello?!</h1>
 </template>
 
 <script>
 export default {
   data() {
     return {
-      isShow: true,
+      isShow: false,
       count: 0,
     };
   },
