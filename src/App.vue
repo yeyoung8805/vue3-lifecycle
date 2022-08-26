@@ -9,5 +9,17 @@ export default {
       count: 2,
     };
   },
+  beforeCreate() {
+    console.log("Before Create!");
+  },
+  created() {
+    console.log("Created!");
+  },
+  beforeMount() {
+    console.log("Before Mount!");
+  },
+  mounted() {
+    console.log("Mounted!");
+  },
 };
 </script>
