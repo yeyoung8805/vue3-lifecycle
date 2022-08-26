@@ -20,6 +20,9 @@ export default {
     msg() {
       console.log("msg: ", this.msg);
     },
+    reversedMessage() {
+      console.log("reversedMessage: ", this.reversedMessage);
+    },
   },
   methods: {
     changeMessage() {
