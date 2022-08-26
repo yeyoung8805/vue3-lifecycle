@@ -1,15 +1,14 @@
 <template>
-  <h1 v-once @click="add">
+  <h1 v-bind="msg">
     {{ msg }}
   </h1>
-  <h1 v-html="msg"></h1>
 </template>
 
 <script>
 export default {
   data() {
     return {
-      msg: '<div style="color: red;">Hello!!</div>',
+      msg: "active",
     };
   },
   methods: {
@@ -19,3 +18,10 @@ export default {
   },
 };
 </script>
+
+<style>
+.active {
+  color: royalblue;
+  font-size: 100px;
+}
+</style>
