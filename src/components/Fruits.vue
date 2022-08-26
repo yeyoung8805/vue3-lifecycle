@@ -7,6 +7,14 @@
       </li>
     </ul>
   </section>
+  <section>
+    <h1>Reverse Fruits</h1>
+    <ul>
+      <li v-for="fruit in reverseFruits" :key="fruit">
+        {{ fruit }}
+      </li>
+    </ul>
+  </section>
 </template>
 
 <script>
@@ -20,6 +28,12 @@ export default {
     //계산된 데이터
     hasFruit() {
       return this.fruits.length > 0;
+    },
+    reverseFruits() {
+      return this.fruits.map((fruit) => {
+        //'Apple' => ['A','p','p','l','e'] => ['e','l','p','p','A'] => 'elppA'
+        return fruit.split("").reverse().join("");
+      });
     },
   },
 };
