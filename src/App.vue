@@ -1,4 +1,5 @@
 <template>
+  <button @click="handler">Click me!</button>
   <ul>
     <li v-for="{ id, name } in newFruits" :key="id">{{ name }}-{{ id }}</li>
   </ul>
@@ -23,6 +24,11 @@ export default {
         id: shortid.generate(),
         name: fruit,
       }));
+    },
+  },
+  methods: {
+    handler() {
+      this.fruits.push("Orange");
     },
   },
 };
