@@ -1,5 +1,5 @@
 <template>
-  <h1 @click="activate">Hello?!</h1>
+  <h1 @click="activate">Hello?! ({{ isActive }})</h1>
 </template>
 
 <script>
