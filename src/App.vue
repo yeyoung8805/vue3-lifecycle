@@ -1,6 +1,6 @@
 <template>
-  <h1 v-bind:class="{ active: isActive }" @click="activate">
-    Hello?! ({{ isActive }})
+  <h1 :style="{ color: color, fontSize: fontSize }" @click="changeStyle">
+    Hello?!
   </h1>
 </template>
 
@@ -8,20 +8,9 @@
 export default {
   data() {
     return {
-      isActive: false,
+      color: "orange",
+      fontSize: "30px",
     };
-  },
-  methods: {
-    activate() {
-      this.isActive = true;
-    },
   },
 };
 </script>
-
-<style scoped>
-.active {
-  color: red;
-  font-weight: bold;
-}
-</style>
