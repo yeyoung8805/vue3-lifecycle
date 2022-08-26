@@ -1,8 +1,10 @@
 <template>
   <button @click="handler">Click me!</button>
-  <h1 v-if="isShow">Hello?!</h1>
-  <h1 v-else-if="count > 3">Count > 3</h1>
-  <h1 v-else>Good~</h1>
+  <div v-if="isShow">
+    <h1>Title</h1>
+    <p>Paragraph 1</p>
+    <p>Paragraph 2</p>
+  </div>
 </template>
 
 <script>
