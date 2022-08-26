@@ -1,6 +1,8 @@
 <template>
   <ul>
-    <li v-for="fruit in newFruits" :key="fruit.id">{{ fruit.name }}</li>
+    <li v-for="fruit in newFruits" :key="fruit.id">
+      {{ fruit.name }}-{{ fruit.id }}
+    </li>
   </ul>
 </template>
 
