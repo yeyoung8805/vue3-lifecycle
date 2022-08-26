@@ -1,6 +1,6 @@
 <template>
   <ul>
-    <li v-for="(f, i) in fruits" :key="f">{{ f }}-{{ i }}</li>
+    <li v-for="(f, i) in fruits" :key="f">{{ f }}-{{ i + 1 }}</li>
   </ul>
 </template>
 
