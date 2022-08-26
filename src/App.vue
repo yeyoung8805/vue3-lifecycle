@@ -1,5 +1,5 @@
 <template>
-  <h1 @click="add">
+  <h1 v-once @click="add">
     {{ msg }}
   </h1>
 </template>
