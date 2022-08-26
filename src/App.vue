@@ -15,6 +15,12 @@ export default {
       return this.msg.split("").reverse().join("");
     },
   },
+  watch: {
+    //변화를 감시하는 역할
+    msg() {
+      console.log("msg: ", this.msg);
+    },
+  },
   methods: {
     changeMessage() {
       this.msg = "Good!";
