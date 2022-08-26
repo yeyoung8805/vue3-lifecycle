@@ -1,5 +1,5 @@
 <template>
-  <h1 v-bind:class="msg">
+  <h1 v-bind:[attr]="msg" @[event]="add">
     {{ msg }}
   </h1>
 </template>
@@ -9,6 +9,8 @@ export default {
   data() {
     return {
       msg: "active",
+      attr: "class",
+      event: "click",
     };
   },
   methods: {
@@ -19,7 +21,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .active {
   color: royalblue;
   font-size: 100px;
