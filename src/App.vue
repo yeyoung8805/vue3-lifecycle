@@ -1,5 +1,5 @@
 <template>
-  <h1 v-bind:[attr]="msg" @[event]="add">
+  <h1 v-bind:[attr]="'active'" @[event]="add">
     {{ msg }}
   </h1>
 </template>
