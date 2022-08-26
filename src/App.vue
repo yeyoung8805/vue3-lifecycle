@@ -1,10 +1,10 @@
 <template>
   <button @click="handler">Click me!</button>
-  <div v-if="isShow">
+  <template v-if="isShow">
     <h1>Title</h1>
     <p>Paragraph 1</p>
     <p>Paragraph 2</p>
-  </div>
+  </template>
 </template>
 
 <script>
