@@ -1,5 +1,5 @@
 <template>
-  <h1 v-bind="msg">
+  <h1 v-bind:class="msg">
     {{ msg }}
   </h1>
 </template>
