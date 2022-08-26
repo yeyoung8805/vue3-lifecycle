@@ -1,5 +1,5 @@
 <template>
-  <h1 :style="fontStyle" @click="changeStyle">Hello?!</h1>
+  <h1 :style="[fontStyle, backgroundStyle]" @click="changeStyle">Hello?!</h1>
 </template>
 
 <script>
@@ -9,6 +9,9 @@ export default {
       fontStyle: {
         color: "orange",
         fontSize: "30px",
+      },
+      backgroundStyle: {
+        backgroundColor: "black",
       },
     };
   },
