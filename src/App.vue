@@ -1,6 +1,6 @@
 <template>
   <ul>
-    <li v-for="(f, i) in fruits" :key="f">{{ f }}-{{ i + 1 }}</li>
+    <li v-for="fruit in newFruits" :key="fruit.id">{{ fruit.name }}</li>
   </ul>
 </template>
 
@@ -9,7 +9,22 @@ export default {
   data() {
     return {
       fruits: ["Apple", "Banana", "Cherry"],
+      // newFruits: [
+      //   { id: 0, name: "Apple" },
+      //   { id: 1, name: "Banana" },
+      //   { id: 2, name: "Cherry" },
+      // ],
     };
+  },
+  computed: {
+    newFruits() {
+      return this.fruits.map((fruit, index) => {
+        return {
+          id: index,
+          name: fruit,
+        };
+      });
+    },
   },
 };
 </script>
