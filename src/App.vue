@@ -5,6 +5,7 @@
 </template>
 
 <script>
+import shortid from "shortid";
 export default {
   data() {
     return {
@@ -18,12 +19,10 @@ export default {
   },
   computed: {
     newFruits() {
-      return this.fruits.map((fruit, index) => {
-        return {
-          id: index,
-          name: fruit,
-        };
-      });
+      return this.fruits.map((fruit) => ({
+        id: shortid.generate(),
+        name: fruit,
+      }));
     },
   },
 };
