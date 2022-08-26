@@ -15,6 +15,7 @@ export default {
   },
   created() {
     console.log("Created!", this.count);
+    console.log(document.querySelector("h1")); //null
   },
   beforeMount() {
     console.log("Before Mount!");
