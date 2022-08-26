@@ -1,5 +1,7 @@
 <template>
-  <h1 @click="activate">Hello?! ({{ isActive }})</h1>
+  <h1 v-bind:class="{ active: isActive }" @click="activate">
+    Hello?! ({{ isActive }})
+  </h1>
 </template>
 
 <script>
@@ -16,3 +18,10 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.active {
+  color: red;
+  font-weight: bold;
+}
+</style>
