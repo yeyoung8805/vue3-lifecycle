@@ -1,24 +1,18 @@
 <template>
-  <h1 :style="[fontStyle, backgroundStyle]" @click="changeStyle">Hello?!</h1>
+  <button @click="handler">Click me!</button>
+  <h1 v-if="isShow">Hello?!</h1>
 </template>
 
 <script>
 export default {
   data() {
     return {
-      fontStyle: {
-        color: "orange",
-        fontSize: "30px",
-      },
-      backgroundStyle: {
-        backgroundColor: "black",
-      },
+      isShow: true,
     };
   },
   methods: {
-    changeStyle() {
-      this.fontStyle.color = "red";
-      this.fontStyle.fontSize = "50px";
+    handler() {
+      this.isShow = !this.isShow;
     },
   },
 };
