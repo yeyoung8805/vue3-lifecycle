@@ -1,8 +1,8 @@
 <template>
-  <h1>{{ msg.split("").reverse().join("") }}</h1>
-  <h1>{{ msg.split("").reverse().join("") }}</h1>
-  <h1>{{ msg.split("").reverse().join("") }}</h1>
-  <h1>{{ msg.split("").reverse().join("") }}</h1>
+  <h1>{{ reverseMessage() }}</h1>
+  <h1>{{ reverseMessage() }}</h1>
+  <h1>{{ reverseMessage() }}</h1>
+  <h1>{{ reverseMessage() }}</h1>
 </template>
 
 <script>
