@@ -18,10 +18,5 @@ export default {
       return this.msg.split("").reverse().join("");
     },
   },
-  methods: {
-    reverseMessage() {
-      return this.msg.split("").reverse().join("");
-    },
-  },
 };
 </script>
