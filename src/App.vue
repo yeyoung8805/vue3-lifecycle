@@ -1,6 +1,7 @@
 <template>
   <button @click="handler">Click me!</button>
   <h1 v-if="isShow">Hello?!</h1>
+  <h1 v-else>Good~</h1>
 </template>
 
 <script>
