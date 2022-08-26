@@ -1,12 +1,13 @@
 <template>
-  <Fruits />
+  <h1>{{ msg }}</h1>
 </template>
 
 <script>
-import Fruits from "~/components/Fruits.vue";
 export default {
-  components: {
-    Fruits,
+  data() {
+    return {
+      msg: "Hello Computed!",
+    };
   },
 };
 </script>
