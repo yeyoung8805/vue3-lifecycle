@@ -16,12 +16,13 @@ export default {
     },
   },
   watch: {
-    //변화를 감시하는 역할
-    msg() {
-      console.log("msg: ", this.msg);
+    //newValue라는 변경된 값을 나타내는 변수명 자유롭게 사용 가능
+    msg(newValue) {
+      console.log("msg: ", this.newValue);
     },
-    reversedMessage() {
-      console.log("reversedMessage: ", this.reversedMessage);
+    //마찬가지로 v라는 변경된 값을 나타내는 변수명 자유롭게 사용 가능
+    reversedMessage(v) {
+      console.log("reversedMessage: ", this.v);
     },
   },
   methods: {
