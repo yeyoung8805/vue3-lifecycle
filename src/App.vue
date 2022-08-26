@@ -2,6 +2,7 @@
   <h1 v-once @click="add">
     {{ msg }}
   </h1>
+  <h1 v-html="msg"></h1>
 </template>
 
 <script>
