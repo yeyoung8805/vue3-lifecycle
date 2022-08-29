@@ -1,6 +1,6 @@
 <template>
-  {{ msg }}
-  <input type="text" :value="msg" @input="handler" />
+  <h1>{{ msg }}</h1>
+  <input type="text" :value="msg" @input="msg = $event.target.value" />
 </template>
 
 <script>
@@ -9,12 +9,6 @@ export default {
     return {
       msg: "Hello world!",
     };
-  },
-  methods: {
-    handler(event) {
-      console.log(event.target.value);
-      this.msg = event.target.value;
-    },
   },
 };
 </script>
