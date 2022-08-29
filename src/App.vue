@@ -1,5 +1,5 @@
 <template>
-  <input type="text" @keydown.a="handler" />
+  <input type="text" @keydown.a.ctrl="handler" />
 </template>
 
 <script>
