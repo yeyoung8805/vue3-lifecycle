@@ -14,11 +14,7 @@ export default {
     large: {
       type: Boolean,
       default: false,
-    },
-    text: {
-      type: String,
-      default: "",
-    },
+    }
   },
 };
 </script>
