@@ -1,6 +1,6 @@
 <template>
   {{ msg }}
-  <input type="text" :value="msg" />
+  <input type="text" :value="msg" @input="handler" />
 </template>
 
 <script>
@@ -9,6 +9,11 @@ export default {
     return {
       msg: "Hello world!",
     };
+  },
+  methods: {
+    handler(event) {
+      console.log(event.target);
+    },
   },
 };
 </script>
