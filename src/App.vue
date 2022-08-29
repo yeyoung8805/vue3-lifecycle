@@ -1,7 +1,5 @@
 <template>
-  <a href="https://naver.com" target="_blank" @click.prevent="handler">
-    Naver
-  </a>
+  <a href="https://naver.com" target="_blank" @click.once="handler"> Naver </a>
 </template>
 
 <script>
