@@ -1,5 +1,11 @@
 <template>
-  <div :style="{ backgroundColor: color }" class="btn">Apple</div>
+  <div
+    :class="{ large: large }"
+    :style="{ backgroundColor: color }"
+    class="btn"
+  >
+    Apple
+  </div>
 </template>
 
 <script>
@@ -8,6 +14,10 @@ export default {
     color: {
       type: String,
       default: "gray",
+    },
+    large: {
+      type: Boolean,
+      default: false,
     },
   },
 };
