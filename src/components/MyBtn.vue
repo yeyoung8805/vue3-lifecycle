@@ -32,9 +32,9 @@ export default {
   background-color: gray;
   color: white;
   cursor: pointer;
-}
-.btn.large {
-  font-size: 20px;
-  padding: 10px 20px;
+  &.large {
+    font-size: 20px;
+    padding: 10px 20px;
+  }
 }
 </style>
