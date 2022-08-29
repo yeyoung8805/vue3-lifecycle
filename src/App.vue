@@ -12,7 +12,7 @@ export default {
   },
   methods: {
     handler(event) {
-      console.log(event.target);
+      console.log(event.target.value);
     },
   },
 };
