@@ -1,6 +1,6 @@
 <template>
   <MyBtn />
-  <MyBtn color="#000" />
+  <MyBtn :color="color" />
   <MyBtn />
   <MyBtn />
 </template>
@@ -10,6 +10,11 @@ import MyBtn from "~/components/MyBtn";
 export default {
   components: {
     MyBtn,
+  },
+  data() {
+    return {
+      color: "#000",
+    };
   },
 };
 </script>
