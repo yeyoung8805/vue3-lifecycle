@@ -1,15 +1,12 @@
 <template>
-  <button @click="handlerA(), handlerB()">Click me!</button>
+  <a href="https://naver.com" target="_blank" @click="handler"> Naver </a>
 </template>
 
 <script>
 export default {
   methods: {
-    handlerA() {
-      console.log("A");
-    },
-    handlerB() {
-      console.log("B");
+    handler() {
+      console.log("ABC!");
     },
   },
 };
