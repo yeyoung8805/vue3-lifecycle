@@ -1,12 +1,13 @@
 <template>
-  <a href="https://naver.com" target="_blank" @click="handler"> Naver </a>
+  <a href="https://naver.com" target="_blank" @click.prevent="handler">
+    Naver
+  </a>
 </template>
 
 <script>
 export default {
   methods: {
-    handler(event) {
-      event.preventDefault();
+    handler() {
       console.log("ABC!");
     },
   },
