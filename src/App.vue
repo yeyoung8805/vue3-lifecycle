@@ -1,6 +1,8 @@
 <template>
   <MyBtn>Banana</MyBtn>
-  <MyBtn :color="color">Banana</MyBtn>
+  <MyBtn :color="color">
+    <span style="color: red">Banana</span>
+  </MyBtn>
   <MyBtn large color="royalblue">Apple</MyBtn>
   <MyBtn>Cherry</MyBtn>
   <button>Banana</button>
