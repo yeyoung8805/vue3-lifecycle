@@ -1,13 +1,13 @@
 <template>
-  <input type="text" @keydown.a.ctrl.shift="handler" />
+  <input type="text" />
 </template>
 
 <script>
 export default {
-  methods: {
-    handler() {
-      console.log("Enter!!");
-    },
+  data() {
+    return {
+      
+    };
   },
 };
 </script>
