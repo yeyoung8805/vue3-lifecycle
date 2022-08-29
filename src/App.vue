@@ -1,13 +1,13 @@
 <template>
-  <button @click="handler">Click me!</button>
+  <button @click="handler">Click 1</button>
+  <button @click="handler">Click 2</button>
 </template>
 
 <script>
 export default {
   methods: {
-    handler(e) {
-      console.log(e);
-      console.log(e.target.textContent);
+    handler(msg) {
+      console.log(msg);
     },
   },
 };
