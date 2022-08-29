@@ -1,6 +1,17 @@
 <template>
-  <div class="btn">Apple</div>
+  <div :style="{ backgroundColor: color }" class="btn">Apple</div>
 </template>
+
+<script>
+export default {
+  props: {
+    color: {
+      type: String,
+      default: "gray",
+    },
+  },
+};
+</script>
 
 <style scoped>
 .btn {
