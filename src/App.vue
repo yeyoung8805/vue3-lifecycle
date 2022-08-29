@@ -1,33 +1,13 @@
 <template>
-  <div class="parent" @wheel.passive="handler">
-    <div class="child"></div>
-  </div>
+  <input type="text" @keydown="handler" />
 </template>
 
 <script>
 export default {
   methods: {
     handler(event) {
-      for (let i = 0; i < 10000; i += 1) {
-        console.log(event);
-      }
+      console.log(event);
     },
   },
 };
 </script>
-
-<style scoped lang="scss">
-.parent {
-  width: 200px;
-  height: 100px;
-  background-color: royalblue;
-  margin: 10px;
-  padding: 10px;
-  overflow: auto; /* parent 영역 넘치는 child 영역이 있을 경우, scroll bar 생성함*/
-  .child {
-    width: 100px;
-    height: 2000px;
-    background-color: orange;
-  }
-}
-</style>
