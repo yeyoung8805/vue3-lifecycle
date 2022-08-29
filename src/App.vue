@@ -1,5 +1,5 @@
 <template>
-  <div class="parent" @click="handler">
+  <div class="parent" @wheel="handler">
     <div class="child"></div>
   </div>
 </template>
