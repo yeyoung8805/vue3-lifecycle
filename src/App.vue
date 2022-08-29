@@ -5,9 +5,9 @@
 <script>
 export default {
   methods: {
-    handler(event) {
-      console.log(event);
-      console.log(event.target.textContent);
+    handler(e) {
+      console.log(e);
+      console.log(e.target.textContent);
     },
   },
 };
