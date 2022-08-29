@@ -1,9 +1,5 @@
 <template>
-  <div
-    :class="{ large: large }"
-    :style="{ backgroundColor: color }"
-    class="btn"
-  >
+  <div :class="{ large }" :style="{ backgroundColor: color }" class="btn">
     Apple
   </div>
 </template>

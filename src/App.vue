@@ -1,7 +1,7 @@
 <template>
   <MyBtn />
   <MyBtn :color="color" />
-  <MyBtn />
+  <MyBtn large />
   <MyBtn />
 </template>
 
