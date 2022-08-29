@@ -1,8 +1,9 @@
 <template>
-  <MyBtn text="Banana" />
+  <MyBtn>Banana</MyBtn>
   <MyBtn :color="color" text="Banana" />
   <MyBtn large color="royalblue" text="Banana" />
   <MyBtn text="Banana" />
+  <button>Banana</button>
 </template>
 
 <script>

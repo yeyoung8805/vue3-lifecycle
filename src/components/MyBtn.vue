@@ -1,6 +1,6 @@
 <template>
   <div :class="{ large }" :style="{ backgroundColor: color }" class="btn">
-    {{ text }}
+    <slot></slot>
   </div>
 </template>
 
