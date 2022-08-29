@@ -8,7 +8,9 @@
 export default {
   methods: {
     handler(event) {
-      console.log(event);
+      for (let i = 0; i < 10000; i += 1) {
+        console.log(event);
+      }
     },
   },
 };
