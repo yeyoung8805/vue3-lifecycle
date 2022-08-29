@@ -1,5 +1,5 @@
 <template>
-  <div class="parent" @click.capture="handlerA">
+  <div class="parent" @click.capture.stop="handlerA">
     <div class="child" @click="handlerB"></div>
   </div>
 </template>
