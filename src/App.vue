@@ -1,5 +1,5 @@
 <template>
-  <div class="parent" @click.self="handlerA">
+  <div class="parent" @click="handlerA">
     <div class="child"></div>
   </div>
 </template>
@@ -7,7 +7,9 @@
 <script>
 export default {
   methods: {
-    handlerA() {
+    handlerA(event) {
+      console.log(event.target);
+      console.log(event.currentTarget);
       console.log("A");
     },
     handlerB() {
