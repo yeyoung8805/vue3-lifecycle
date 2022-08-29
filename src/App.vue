@@ -5,7 +5,8 @@
 <script>
 export default {
   methods: {
-    handler() {
+    handler(event) {
+      event.preventDefault();
       console.log("ABC!");
     },
   },
