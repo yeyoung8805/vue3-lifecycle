@@ -12,7 +12,7 @@ export default {
   },
   watch: {
     msg() {
-      console.log(this.msg);
+      console.log(this.msg.trim);
     },
   },
 };
