@@ -6,7 +6,9 @@
 export default {
   methods: {
     handler(event) {
-      console.log(event);
+      if (event.key === "Enter") {
+        console.log("Enter!!");
+      }
     },
   },
 };
