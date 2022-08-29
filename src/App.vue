@@ -1,6 +1,6 @@
 <template>
   <MyBtn />
-  <MyBtn color="royalblue" />
+  <MyBtn color="#000" />
   <MyBtn />
   <MyBtn />
 </template>
