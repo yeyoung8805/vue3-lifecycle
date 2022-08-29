@@ -1,5 +1,5 @@
 <template>
-  <div class="parent" @wheel="handler">
+  <div class="parent" @wheel.passive="handler">
     <div class="child"></div>
   </div>
 </template>
