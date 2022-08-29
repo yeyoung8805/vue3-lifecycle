@@ -1,5 +1,5 @@
 <template>
-  <div class="parent" @click="handlerA">
+  <div class="parent" @click.self="handlerA">
     <div class="child"></div>
   </div>
 </template>
