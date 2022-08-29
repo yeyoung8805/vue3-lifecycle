@@ -1,6 +1,6 @@
 <template>
-  <div class="parent" @click.capture.stop="handlerA">
-    <div class="child" @click="handlerB"></div>
+  <div class="parent" @click="handlerA">
+    <div class="child"></div>
   </div>
 </template>
 
