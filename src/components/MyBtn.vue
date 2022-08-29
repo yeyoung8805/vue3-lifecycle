@@ -2,11 +2,12 @@
   <div class="btn">
     <slot></slot>
   </div>
-  <h2></h2>
 </template>
 
 <script>
-export default {};
+export default {
+  inheritAttrs: false,
+};
 </script>
 
 <style scoped lang="scss">
