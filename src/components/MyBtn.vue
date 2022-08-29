@@ -2,7 +2,6 @@
   <div class="btn">
     <slot></slot>
   </div>
-  <div></div>
 </template>
 
 <script>
