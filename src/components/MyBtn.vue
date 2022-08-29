@@ -1,6 +1,6 @@
 <template>
   <div :class="{ large }" :style="{ backgroundColor: color }" class="btn">
-    Apple
+    {{ text }}
   </div>
 </template>
 
@@ -14,6 +14,10 @@ export default {
     large: {
       type: Boolean,
       default: false,
+    },
+    text: {
+      type: String,
+      default: "",
     },
   },
 };
