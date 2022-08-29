@@ -7,6 +7,7 @@ export default {
   methods: {
     handler(event) {
       console.log(event);
+      console.log(event.target);
     },
   },
 };
