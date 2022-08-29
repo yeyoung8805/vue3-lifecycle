@@ -1,5 +1,5 @@
 <template>
-  <MyBtn>Banana</MyBtn>
+  <MyBtn class="heropy">Banana</MyBtn>
 </template>
 
 <script>
