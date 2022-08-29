@@ -1,6 +1,6 @@
 <template>
   <h1>{{ msg }}</h1>
-  <input type="text" :value="msg" @input="msg = $event.target.value" />
+  <input type="text" v-model="msg" />
 </template>
 
 <script>
