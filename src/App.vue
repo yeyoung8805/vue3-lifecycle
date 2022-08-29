@@ -10,7 +10,8 @@ export default {
     handlerA() {
       console.log("A");
     },
-    handlerB() {
+    handlerB(event) {
+      event.stopPropagation();
       console.log("B");
     },
   },
