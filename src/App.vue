@@ -1,14 +1,12 @@
 <template>
-  <input type="text" @keydown="handler" />
+  <input type="text" @keydown.enter="handler" />
 </template>
 
 <script>
 export default {
   methods: {
-    handler(event) {
-      if (event.key === "Enter") {
-        console.log("Enter!!");
-      }
+    handler() {
+      console.log("Enter!!");
     },
   },
 };
