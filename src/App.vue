@@ -1,6 +1,6 @@
 <template>
-  <button @click="handler">Click 1</button>
-  <button @click="handler">Click 2</button>
+  <button @click="handler('hi')">Click 1</button>
+  <button @click="handler('what')">Click 2</button>
 </template>
 
 <script>
