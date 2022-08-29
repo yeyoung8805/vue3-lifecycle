@@ -23,7 +23,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .btn {
   display: inline-block;
   margin: 4px;
@@ -32,5 +32,9 @@ export default {
   background-color: gray;
   color: white;
   cursor: pointer;
+}
+.btn.large {
+  font-size: 20px;
+  padding: 10px 20px;
 }
 </style>
