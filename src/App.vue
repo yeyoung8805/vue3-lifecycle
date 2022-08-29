@@ -1,4 +1,5 @@
 <template>
+  {{ msg }}
   <input type="text" :value="msg" />
 </template>
 
