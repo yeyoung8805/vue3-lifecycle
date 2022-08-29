@@ -1,6 +1,6 @@
 <template>
   <div class="parent" @click="handlerA">
-    <div class="child" @click="handlerB"></div>
+    <div class="child" @click.stop="handlerB"></div>
   </div>
 </template>
 
@@ -10,8 +10,7 @@ export default {
     handlerA() {
       console.log("A");
     },
-    handlerB(event) {
-      event.stopPropagation();
+    handlerB() {
       console.log("B");
     },
   },
