@@ -1,5 +1,5 @@
 <template>
-  <div class="parent" @click="handlerA">
+  <div class="parent" @click="handler">
     <div class="child"></div>
   </div>
 </template>
@@ -7,13 +7,8 @@
 <script>
 export default {
   methods: {
-    handlerA(event) {
-      console.log(event.target);
-      console.log(event.currentTarget);
-      console.log("A");
-    },
-    handlerB() {
-      console.log("B");
+    handler(event) {
+      console.log(event);
     },
   },
 };
@@ -26,9 +21,10 @@ export default {
   background-color: royalblue;
   margin: 10px;
   padding: 10px;
+  overflow: auto; /* parent 영역 넘치는 child 영역이 있을 경우, scroll bar 생성함*/
   .child {
     width: 100px;
-    height: 100px;
+    height: 2000px;
     background-color: orange;
   }
 }
