@@ -9,7 +9,7 @@ export default {
     Hello,
   },
   mounted() {
-    console.log(this.$refs.hello.$el);
+    console.log(this.$refs.hello.$refs.good);
   },
 };
 </script>
