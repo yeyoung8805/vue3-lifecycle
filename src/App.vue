@@ -1,4 +1,6 @@
 <template>
+  <button @click="message = 'Good?'">Click!</button>
+  <h1>App : {{ message }}</h1>
   <Parent />
 </template>
 
