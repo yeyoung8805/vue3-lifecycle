@@ -1,5 +1,5 @@
 <template>
-  <MyBtn class="heropy" style="color: red">Banana</MyBtn>
+  <MyBtn class="heropy" style="color: red" title="Hello World!">Banana</MyBtn>
 </template>
 
 <script>
