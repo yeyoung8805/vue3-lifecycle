@@ -4,10 +4,16 @@
 </template>
 
 <script>
+import { ref } from "vue";
 export default {
   setup() {
-    let count = 0;
-    let message = "Hello world!";
+    let count = ref(0);
+    let message = ref("Hello world!");
+
+    return {
+      count,
+      message,
+    };
   },
 };
 </script>
