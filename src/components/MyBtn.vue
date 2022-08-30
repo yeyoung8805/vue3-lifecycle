@@ -2,15 +2,11 @@
   <div class="btn">
     <slot></slot>
   </div>
-  <h1 v-bind="$attrs"></h1>
 </template>
 
 <script>
 export default {
-  inheritAttrs: false,
-  created() {
-    console.log(this.$attrs);
-  },
+  
 };
 </script>
 
