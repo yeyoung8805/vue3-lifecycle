@@ -8,11 +8,11 @@ import { ref } from "vue";
 export default {
   setup() {
     let count = ref(0);
-    let message = ref("Hello world!");
-
     function increase() {
       count.value += 1;
     }
+
+    let message = ref("Hello world!");
     function changeMessage() {
       message.value = "Good?!";
     }
