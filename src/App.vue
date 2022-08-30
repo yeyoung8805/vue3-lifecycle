@@ -18,9 +18,7 @@ export default {
   },
   provide() {
     return {
-      msg: computed(() => {
-        return this.message;
-      }),
+      msg: computed(() => this.message),
     };
   },
 };
