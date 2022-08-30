@@ -1,13 +1,12 @@
 <template>
   <div class="btn">
-    <slot> Apple </slot>
+    <slot name="icon"></slot>
+    <slot name="text"></slot>
   </div>
 </template>
 
 <script>
-export default {
-
-};
+export default {};
 </script>
 
 <style scoped>
