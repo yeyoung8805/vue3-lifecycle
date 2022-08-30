@@ -19,6 +19,11 @@ export default {
       return this.message.split("").reverse().join("");
     },
   },
+  watch: {
+    message(newValue) {
+      console.log(newValue);
+    },
+  },
   methods: {
     increase() {
       this.count += 1;
