@@ -5,7 +5,7 @@
 <script>
 export default {
   mounted() {
-    console.log(this.$refs.hello.textContent);
+    console.log(this.$refs.hello);
   },
 };
 </script>
