@@ -15,11 +15,6 @@ export default {
     },
   },
   emits: ["hello"],
-  // methods: {
-  //   hello() {
-  //     this.$emit("hello");
-  //   },
-  // },
   setup(props, context) {
     function hello() {
       context.emit("hello");
