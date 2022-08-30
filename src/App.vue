@@ -1,5 +1,8 @@
 <template>
-  <MyBtn>Banana</MyBtn>
+  <MyBtn>
+    <span>(B)</span>
+    <span>Banana</span>
+  </MyBtn>
 </template>
 
 <script>
