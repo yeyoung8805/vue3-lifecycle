@@ -15,15 +15,20 @@ export default {
     },
   },
   emits: ["hello"],
-  mounted() {
-    console.log(this.color);
-    console.log(this.$attrs);
-  },
+  // mounted() {
+  //   console.log(this.color);
+  //   console.log(this.$attrs);
+  // },
   methods: {
     hello() {
       this.$emit("hello");
     },
   },
-  
+  setup(props, context) {
+    onMounted(() => {
+      console.log(props.color);
+      console.log(context.attrs);
+    });
+  },
 };
 </script>
