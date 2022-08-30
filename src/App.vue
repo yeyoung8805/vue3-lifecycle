@@ -9,8 +9,9 @@ export default {
     MyBtn,
   },
   methods: {
-    log() {
+    log(event) {
       console.log("Click!!");
+      console.log(event);
     },
   },
 };

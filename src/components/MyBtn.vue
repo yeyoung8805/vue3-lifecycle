@@ -2,7 +2,7 @@
   <div class="btn">
     <slot></slot>
   </div>
-  <h1 @dblclick="$emit('heropy')">ABC</h1>
+  <h1 @dblclick="$emit('heropy', 123)">ABC</h1>
 </template>
 
 <script>
