@@ -4,15 +4,15 @@
 
 <script>
 export default {
-  data() {
+  setup() {
+    let count = 0,
+    function increase() {
+      count += 1;
+    }
     return {
-      count: 0,
-    };
-  },
-  methods: {
-    increase() {
-      this.count += 1;
-    },
-  },
+      count,
+      increase
+    }
+  }
 };
 </script>
