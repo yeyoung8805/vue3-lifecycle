@@ -1,9 +1,9 @@
 <template>
   <MyBtn>
-    <template v-slot:icon>
+    <template #icon>
       <span>(B)</span>
     </template>
-    <template v-slot:text>
+    <template #text>
       <span>Banana</span>
     </template>
   </MyBtn>
