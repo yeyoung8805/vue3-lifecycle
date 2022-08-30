@@ -1,9 +1,13 @@
 <template>
-  <h1 ref="hello">Hello world!</h1>
+  <Hello ref="hello" />
 </template>
 
 <script>
+import Hello from "~.=/components/Hello";
 export default {
+  components: {
+    Hello,
+  },
   created() {
     //컴포넌트 생성된 직후에는
     // h1 태그 내용 읽어들이기 전이라, undefinec
