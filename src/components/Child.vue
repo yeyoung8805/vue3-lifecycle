@@ -1,7 +1,5 @@
 <template>
-  <div>
-    {{ msg }}
-  </div>
+  <div>Child : {{ msg }}</div>
 </template>
 
 <script>
