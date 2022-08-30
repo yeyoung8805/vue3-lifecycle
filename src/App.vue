@@ -1,10 +1,10 @@
 <template>
   <MyBtn>
-    <template #icon>
-      <span>(B)</span>
-    </template>
     <template #text>
       <span>Banana</span>
+    </template>
+    <template #icon>
+      <span>(B)</span>
     </template>
   </MyBtn>
 </template>
