@@ -1,5 +1,5 @@
 <template>
-  <MyBtn @click="log">Banana</MyBtn>
+  <MyBtn @heropy="log">Banana</MyBtn>
 </template>
 
 <script>
