@@ -3,16 +3,18 @@
 </template>
 
 <script>
+import { ref } from "vue";
+
 export default {
   setup() {
-    let count = 0,
+    let count = ref(0);
     function increase() {
-      count += 1;
+      count.value += 1;
     }
     return {
       count,
-      increase
-    }
-  }
+      increase,
+    };
+  },
 };
 </script>
