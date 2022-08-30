@@ -6,6 +6,7 @@
 
 <script>
 import Parent from "~/components/Parent";
+import { computed } from "vue";
 export default {
   components: {
     Parent,
@@ -17,7 +18,9 @@ export default {
   },
   provide() {
     return {
-      msg: this.message,
+      msg: computed(() => {
+        return this.message;
+      }),
     };
   },
 };
