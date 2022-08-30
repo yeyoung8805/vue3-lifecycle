@@ -24,6 +24,12 @@ export default {
       console.log(newValue);
     },
   },
+  created() {
+    console.log(this.message);
+  },
+  mounted() {
+    console.log(this.count);
+  },
   methods: {
     increase() {
       this.count += 1;
