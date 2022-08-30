@@ -11,5 +11,13 @@ export default {
       message: "Hello world!",
     };
   },
+  methods: {
+    increase() {
+      this.count += 1;
+    },
+    changeMessage() {
+      this.message = "Good?!";
+    },
+  },
 };
 </script>

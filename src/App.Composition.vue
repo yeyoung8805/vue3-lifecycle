@@ -10,9 +10,18 @@ export default {
     let count = ref(0);
     let message = ref("Hello world!");
 
+    function increase() {
+      count.value += 1;
+    }
+    function changeMessage() {
+      message.value = "Good?!";
+    }
+
     return {
       count,
       message,
+      increase,
+      changeMessage,
     };
   },
 };
