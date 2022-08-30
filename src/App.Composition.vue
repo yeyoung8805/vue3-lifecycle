@@ -4,7 +4,7 @@
 </template>
 
 <script>
-import { ref, computed, watch } from "vue";
+import { ref, computed, watch, onMounted } from "vue";
 export default {
   setup() {
     const count = ref(0);
@@ -25,6 +25,11 @@ export default {
     function changeMessage() {
       message.value = "Good?!";
     }
+    console.log(message.value);
+
+    onMounted(() => {
+      console.log(count.value);
+    });
 
     return {
       count,
