@@ -1,5 +1,5 @@
 <template>
-  <MyBtn />
+  <MyBtn>Banana</MyBtn>
 </template>
 
 <script>
