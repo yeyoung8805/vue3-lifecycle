@@ -2,7 +2,7 @@
   <div class="btn">
     <slot></slot>
   </div>
-  <h1 :class="$attrs.class" :style="$attrs.style"></h1>
+  <h1 v-bind="$attrs"></h1>
 </template>
 
 <script>
