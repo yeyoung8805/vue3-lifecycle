@@ -1,6 +1,6 @@
 <template>
-  <h1 @click="increase">{{ count }}</h1>
-  <h1 @click="changeMessage">{{ message }}</h1>
+  <h1 @click="increase">{{ count }} / {{ doubleCount }}</h1>
+  <h1 @click="changeMessage">{{ message }} / {{ reversedMessage }}</h1>
 </template>
 
 <script>
@@ -10,6 +10,14 @@ export default {
       count: 0,
       message: "Hello world!",
     };
+  },
+  computed: {
+    doubleCount() {
+      return this.count * 2;
+    },
+    reversedMessage() {
+      return this.message.split("").reverse().join("");
+    },
   },
   methods: {
     increase() {
