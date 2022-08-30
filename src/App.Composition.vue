@@ -4,7 +4,7 @@
 </template>
 
 <script>
-import { ref, computed } from "vue";
+import { ref, computed, watch } from "vue";
 export default {
   setup() {
     const count = ref(0);
@@ -18,6 +18,9 @@ export default {
     const message = ref("Hello world!");
     const reversedMessage = computed(() => {
       return message.value.split("").reverse().join("");
+    });
+    watch(message, (newValue) => {
+      console.log(newValue);
     });
     function changeMessage() {
       message.value = "Good?!";
