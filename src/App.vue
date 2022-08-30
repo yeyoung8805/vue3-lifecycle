@@ -1,5 +1,5 @@
 <template>
-  <Parent :msg="message" />
+  <Parent />
 </template>
 
 <script>
@@ -11,6 +11,11 @@ export default {
   data() {
     return {
       message: "Hello World!",
+    };
+  },
+  provide() {
+    return {
+      msg: this.message,
     };
   },
 };
