@@ -1,5 +1,5 @@
 <template>
-  <MyBtn @heropy="log">Banana</MyBtn>
+  <MyBtn @heropy="log" @change-msg="logMsg">Banana</MyBtn>
 </template>
 
 <script>
@@ -12,6 +12,9 @@ export default {
     log(event) {
       console.log("Click!!");
       console.log(event);
+    },
+    logMsg(msg) {
+      console.log(msg);
     },
   },
 };
