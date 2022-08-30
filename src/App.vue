@@ -1,15 +1,29 @@
 <template>
-  <Hello ref="hello" />
+  <h1 @click="increase">{{ count }} / {{ doubleCount }}</h1>
+  <h1>{{ message }} / {{ reversedMessage }}</h1>
 </template>
 
 <script>
 import Hello from "~/components/Hello.vue";
 export default {
-  components: {
-    Hello,
+  data() {
+    return {
+      message: "Hello World!",
+      count: 0,
+    };
   },
-  mounted() {
-    console.log(this.$refs.hello.$refs.good);
+  computed: {
+    doubleCount() {
+      return this.count * 2;
+    },
+    reversedMessage() {
+      return this.message.split("").reverse().join("");
+    },
+  },
+  methods: {
+    increase() {
+      this.count += 1;
+    },
   },
 };
 </script>
