@@ -2,11 +2,11 @@
   <div class="btn">
     <slot></slot>
   </div>
+  <h1></h1>
 </template>
 
 <script>
 export default {
-  inheritAttrs: false,
 };
 </script>
 
